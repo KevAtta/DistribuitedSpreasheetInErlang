@@ -1,0 +1,1 @@
+-record(spreadsheet, {name, tabs, owner, access_policies = []}).
