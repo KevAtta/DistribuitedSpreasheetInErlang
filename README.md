@@ -101,7 +101,7 @@ At this point the process using the message passing method will remain waiting f
 
 The functions inserted and usable via the message passing method are now listed. Following execution, it is possible to view the response of the message using the ``flush()`` command.
 <div align="center">
-    <h5><b>Creating a sheet with default dimensions:</b></h5>
+    <h5><b>Creating a sheet with default dimensions</b></h5>
 </div>
 
 ```erlang
@@ -113,7 +113,7 @@ The functions inserted and usable via the message passing method are now listed.
 - By default, a sheet is created containing two tabs measuring 3 x 2;
 - If the function is successful, the sheet will return.
 <div align="center">
-    <h5><b>Creating a sheet with variable dimensions:</b></h5>
+    <h5><b>Creating a sheet with variable dimensions</b></h5>
 </div>
 
 ```erlang
@@ -125,7 +125,7 @@ The functions inserted and usable via the message passing method are now listed.
 - If they are inserted instead of the indices and the number of tabs no values numeric, or negative, the sheet is not created and an error returns;
 - If the function is successful, the sheet will return.
 <div align="center">
-    <h5><b>Reading a value within a sheet:</b></h5>
+    <h5><b>Reading a value within a sheet</b></h5>
 </div>
 
 ```erlang
@@ -139,7 +139,7 @@ The functions inserted and usable via the message passing method are now listed.
 - There is also a version of the same function with the addition of a <b>timeout</b>. This value must be an integer value and quantifies seconds;
 - If the function is successful the value will be returned.
 <div align="center">
-    <h5><b>Writing a value within a sheet:</b></h5>
+    <h5><b>Writing a value within a sheet</b></h5>
 </div>
 
 ```erlang
@@ -155,7 +155,7 @@ table;
 - There is also a version of the same function with the addition of a <b>timeout</b>. This value must be an integer value and quantifies seconds;
 - If the function is successful, a Boolean will return.
 <div align="center">
-    <h5><b>Changing the sheet policy:</b></h5>
+    <h5><b>Changing the sheet policy</b></h5>
 </div>
 
 ```erlang
@@ -170,7 +170,7 @@ table;
 - If you try to insert an already existing process into the policies, an error will return;
 - If the function is successful, a Boolean will return.
 <div align="center">
-    <h5><b>Print information on one sheet:</b></h5>
+    <h5><b>Print information on one sheet</b></h5>
 </div>
 
 ```erlang
@@ -206,7 +206,7 @@ table;
 - Import a sheet from a csv file;
 - There is also a version of the same function with the addition of a <b>timeout</b>. This value must be an integer value and quantifies seconds.
 <div align="center">
-    <h5><b>Adding a row in a specific sheet tab:</b></h5>
+    <h5><b>Adding a row in a specific sheet tab</b></h5>
 </div>
 
 ```erlang
@@ -218,7 +218,7 @@ table;
 - If you insert an invalid tab an error will return;
 - If the function is successful it will return 'ok'.
 <div align="center">
-    <h5><b>Removing a row in a specific sheet tab:</b></h5>
+    <h5><b>Removing a row in a specific sheet tab</b></h5>
 </div>
 
 ```erlang
