@@ -28,7 +28,7 @@ being implemented natively in the same system;
 erlang, has high scalability and fault tolerance (as mentioned above) and
 tables can be replicated across different nodes.
 
-In order to identify the owner of the sheet, it was also decided to implement the spreadsheet:init() function which will spawn() the process which will have the possibility of possibly creating the sheet and carrying out operations on them. The table that contains the various sheets is made up of the fields of a record called 'spreadsheet' composed as follows:
+In order to identify the owner of the sheet, it was also decided to implement the ``spreadsheet:init()`` function which will ``spawn()`` the process which will have the possibility of possibly creating the sheet and carrying out operations on them. The table that contains the various sheets is made up of the fields of a record called 'spreadsheet' composed as follows:
 ```erlang
 -record(spreadsheet, {name, tabs, owner, access_policies = []}).
 ```
@@ -59,14 +59,14 @@ c(modifie_row).
 
 At this point, make known the nodes on the network using the ```net_adm:ping()``` command:
 ```erlang
-(node1@localhost)>net_adm:ping(node2@localhost).
-(node1@localhost)>net_adm:ping(node3@localhost).
+(node1@localhost)> net_adm:ping(node2@localhost).
+(node1@localhost)> net_adm:ping(node3@localhost).
 ```
 
 In this way, having received 'pong' as a response, a connection will be established between the nodes. If you receive 'pang' it means that something has gone wrong. Furthermore, it is not necessary to execute this command on all nodes but only on one as the others will then connect automatically.
 At this point it is possible to print the list of nodes to be able to see that the nodes have actually been connected correctly:
 ```erlang
-(node1@localhost)>nodes(). 
+(node1@localhost)> nodes(). 
 [node2@localhost, node3@localhost]
 ```
 At this point create the Mnesia schema in each node created using the following command:
@@ -98,7 +98,8 @@ At this point the process using the message passing method will remain waiting f
 <div align="center">
     <h4><b>IMPLEMENTATION</b></h4>
 </div>
-The functions inserted and usable via the message passing method are now listed. Following execution, it is possible to view the response of the message using the flush() command.
+
+The functions inserted and usable via the message passing method are now listed. Following execution, it is possible to view the response of the message using the ``flush()`` command.
 <div align="center">
     <h5><b>Creating a sheet with default dimensions:</b></h5>
 </div>
