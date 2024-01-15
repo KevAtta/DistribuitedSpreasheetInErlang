@@ -77,7 +77,9 @@ And then, in any node of your choice, start the ```start_table()``` function as 
 (node1@localhost)> spreadsheet:start_table().
 ```
 At this point it is possible to verify that the inMnesia table has been correctly created in all nodes via the ```observer:start()``` function. We will therefore obtain a similar situation:
+
 ![observer mnesia tables](https://github.com/KevAtta/ProgettoADCC/assets/48328145/abb13fd5-c2f8-420a-b8e6-7f3d44f5453d)
+
 Now to create a new spreadsheet, you need to start the ``spreadsheet:init()`` function from one of the nodes, the ``init()`` function is defined as in the next snippet.
 ```erlang
 init(RegisterName) ->
