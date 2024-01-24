@@ -1,5 +1,4 @@
 # Distributed spreadsheet
-![erlang](https://github.com/KevAtta/DistribuitedSpreasheetInErlang)
 
 ## Distributed Applications and Cloud Computing Project
 
